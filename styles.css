@@ -64,7 +64,9 @@ body{
 
     justify-content: space-evenly;
 
-    margin-bottom: 15px;
+    align-items: center;
+
+    margin-bottom: 25px;
     margin-top: 25px;
 }
 
