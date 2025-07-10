@@ -1,3 +1,4 @@
+/* Global Styling */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -6,23 +7,101 @@
 
 body{
     background-color: #ECF2F8;
+    font-family: "Manrope", sans-serif;
 }
 
+/* Card styling */
 .card-container{
-    background-color: white;
-    min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
+    background-color: white;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     max-width: 90%;
 
+    margin-top: 65px;
+    margin-bottom: 65px;
+    border-radius: 15px;
+
 }
 
+/* Content in Card styling */
 .flex-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    height: max-content;
     border-radius: 10px;
     overflow: hidden;
+    justify-items: space-around;
+}
+
+.image{
+    max-width: 100%;
+}
+
+.header{
+    color: #48556A;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.description{
+    color: #6E8098;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    margin-top: 25px;
+    font-size: 15px
+}
+
+/* Avatar picture & information styling */
+.avatar-information{
+    display: flex;
+    flex-direction: row;
+    margin-top: 45px;
+
+    justify-content: space-evenly
+
+}
+
+.left-elements{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+
+.profile-picture{
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+}
+
+.name-and-date{
+    margin-left: 5%;
+}
+
+.name{
+    color: #48556A;
+    font-weight: 700;
+}
+
+.date{
+    color: #9DAEC2;
+}
+
+.share-icon{
+    display: flex;
+    background-color: #ECF2F8;
+    height: 32px;
+    width: 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
 }
